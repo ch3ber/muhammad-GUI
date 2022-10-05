@@ -1,7 +1,9 @@
-import React from 'react'
-import { Box, Container, Grid, Link } from '@mui/material'
+import React from 'react';
+import {
+  Box, Container, Grid, Link,
+} from '@mui/material';
 
-const Footer = () => {
+function Footer() {
   return (
     <Box component="footer" sx={{ p: 5, backgroundColor: '#e5e5e5' }}>
       <Container sx={{ maxWidth: 768 }}>
@@ -28,7 +30,7 @@ const Footer = () => {
         </Grid>
       </Container>
     </Box>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

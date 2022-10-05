@@ -28,7 +28,7 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "./node_modules/standard/eslintrc.json"
+      "airbnb"
     ]
   },
   "browserslist": {
@@ -44,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "standard": "*"
+    "eslint-config-airbnb": "^19.0.4"
   }
 }

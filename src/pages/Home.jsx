@@ -1,10 +1,10 @@
-import React from 'react'
-import { Box, Button, Container } from '@mui/material'
+import React from 'react';
+import { Box, Button, Container } from '@mui/material';
 
-import Footer from '../components/Footer'
-import ComponentList from '../components/ComponentsList'
+import Footer from '../components/Footer';
+import ComponentList from '../components/ComponentsList';
 
-const Home = () => {
+function Home() {
   return (
     <>
       <Container sx={{ maxWidth: 1080 }}>
@@ -47,7 +47,7 @@ const Home = () => {
       </Container>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
-import TextField from '@mui/material/TextField'
-import Button from '@mui/material/Button'
+import React, { useState } from 'react';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
-import './Register.scss'
-import useWindowDimensions from './Dimension'
+import './Register.scss';
+import {
+  Card, Grid, Stack, Typography,
+} from '@mui/material';
+import useWindowDimensions from './Dimension';
 // import Background from "../assets/background.jpg";
-import { Card, Grid, Stack, Typography } from '@mui/material'
 
-const Login = () => {
-  const { height } = useWindowDimensions()
-  const [email, setEmail] = useState(null)
-  const [password, setPassword] = useState(null)
+function Login() {
+  const { height } = useWindowDimensions();
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('LOGIN FORM SUBMITTED!')
-  }
+    e.preventDefault();
+    // console.log('LOGIN FORM SUBMITTED!');
+  };
 
   return (
     <form
@@ -66,7 +68,7 @@ const Login = () => {
         </Stack>
       </Card>
     </form>
-  )
+  );
 }
 
-export default Login
+export default Login;
