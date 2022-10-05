@@ -5,10 +5,12 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Error404 from './components/Error404';
 import Home from './pages/Home';
+import Navbar from './components/Navar';
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/register" component={Register} />
